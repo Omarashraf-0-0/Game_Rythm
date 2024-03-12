@@ -19,27 +19,50 @@ h1 {
 }
 
 /* Navigation */
-
-.nav {
-    height: 10vh;
-    background-color: var(--black-color);
-    color: var(--white-color);
+/* The begin of the Navbar --------------------------------------*/
+header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12%;
+    background-color: black;
+    height: 100px;
 }
-
-.navLogo {
-    margin: 5px
+.pagelogo{
+    width: 100px;
+    height: 100px;
 }
-
-.navRight {
-    margin: 20px
+.nav{
+    display: flex;
+    justify-content: space-between;
 }
-
-.navRight span {
-    margin: 10px;
+.nav a{
+    color: rgba(255, 255, 255, 0.73);
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 20px;   
+    font-size: large;
+    font-weight: bold; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+.nav a::after{
+    content: '';
+    position: absolute;
+    background-color: #ffee10;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.9s;
+}
+.nav a:hover:after{
+    width: 100%;
+}
+.nav a:hover{
+    color: #ffee10;
+}
+/* The end of the Navbar--------------------------------- */
 /* End of Navigation */
 
 /* Main */
