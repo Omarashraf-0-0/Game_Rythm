@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     font-family: "Saira Condensed", sans-serif;
-    color: var(--white-color)
+    color: var(--white-color);
+    background-color: var(--black-color);
 }
 
 h1 {
@@ -203,3 +204,16 @@ button:hover {
 .testimonials1, .testimonials2, .testimonials3{
     width: 25%;
 }
+
+/* Yellow Shadow BOX */
+.box{
+    margin-top: 59px;
+    background-color: black;
+    height: 300px;
+    box-shadow: 0px 20px 50px var(--yellow-color), 2px -20px 50px var(--yellow-color);
+}
+.Box{
+    height: 400px;
+    background-color: black;
+}
+/* End of Yellow Shadow Box */
