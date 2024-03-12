@@ -35,6 +35,7 @@ header{
 .nav{
     display: flex;
     justify-content: space-between;
+    width:auto
 }
 .nav a{
     color: rgba(255, 255, 255, 0.73);
@@ -229,14 +230,19 @@ button:hover {
 }
 
 /* Yellow Shadow BOX */
-.box{
+.OuterBox{
+    padding-top: 10;
+    height: 400px;
+    background-color: black;
+    font-size: 30px;
+    text-align: center;
+}
+.boxContent{
+    padding-top: 90px;
     margin-top: 59px;
     background-color: black;
     height: 300px;
     box-shadow: 0px 20px 50px var(--yellow-color), 2px -20px 50px var(--yellow-color);
 }
-.Box{
-    height: 400px;
-    background-color: black;
-}
+
 /* End of Yellow Shadow Box */
