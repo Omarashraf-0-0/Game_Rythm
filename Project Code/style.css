@@ -30,7 +30,7 @@ header{
     font-weight: bold; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.nav a:after{
+.nav a::after{
     content: '';
     position: absolute;
     background-color: #ffee10;
@@ -38,7 +38,7 @@ header{
     width: 0;
     left: 0;
     bottom: -10px;
-    transition: 0.3s;
+    transition: 0.9s;
 }
 .nav a:hover:after{
     width: 100%;
