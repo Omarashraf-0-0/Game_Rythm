@@ -20,7 +20,7 @@ h1 {
 
 /* Navigation */
 /* The begin of the Navbar --------------------------------------*/
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,26 +28,30 @@ header{
     background-color: black;
     height: 100px;
 }
-.pagelogo{
+
+.pagelogo {
     width: 100px;
     height: 100px;
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
-    width:auto
+    width: auto
 }
-.nav a{
+
+.nav a {
     color: rgba(255, 255, 255, 0.73);
     text-decoration: none;
     position: relative;
     letter-spacing: 0.5px;
-    padding: 0 20px;   
+    padding: 0 20px;
     font-size: large;
-    font-weight: bold; 
+    font-weight: bold;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
-.nav a::after{
+
+.nav a::after {
     content: '';
     position: absolute;
     background-color: #ffee10;
@@ -57,12 +61,15 @@ header{
     bottom: -10px;
     transition: 0.9s;
 }
-.nav a:hover:after{
+
+.nav a:hover:after {
     width: 100%;
 }
-.nav a:hover{
+
+.nav a:hover {
     color: #ffee10;
 }
+
 /* The end of the Navbar--------------------------------- */
 /* End of Navigation */
 
@@ -159,14 +166,16 @@ button:hover {
     color: var(--yellow-color);
     font-size: 40px;
 }
+
 /* End of home */
 
 
 /* ranked */
-.ranked{
+.ranked {
     background-color: var(--black-color);
 }
-.rankedHeader{
+
+.rankedHeader {
     height: 20vh;
     text-align: center;
     display: flex;
@@ -175,39 +184,67 @@ button:hover {
     align-content: center;
     justify-content: center;
 }
-.rankedGames{
-    display:flex;
+
+.rankedGames {
+    display: flex;
     justify-content: center;
     gap: 20px;
 }
-.rankedGames1 h1, .rankedGames2 h1, .rankedGames3 h1{
+
+.rankedGames1 h1,
+.rankedGames2 h1,
+.rankedGames3 h1 {
     margin-top: 20px;
 }
-.rankedText{
+
+.rankedText {
     padding: 20px;
 }
-.ranked button{
+
+.ranked button {
     margin-top: 15px;
 }
-.hover-play:hover{
-    cursor: pointer;
-    width: 405px;
+
+.hover-play {
+    position: relative;
+    transition: .1s all ease-in;
+
 }
+
+.hover-play:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.rankedGames2 {
+    position: relative;
+}
+
+.rankedGames2::before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
 /* End of Ranked- */
 
 
 /* Testimonials */
-.test{
+.test {
     background-color: #000000;
     text-align: center;
     justify-content: center;
     height: 80vh;
 }
-.testPic{
+
+.testPic {
     width: 120px;
     border-radius: 100%;
 }
-.testHeader{
+
+.testHeader {
     height: 30vh;
     display: flex;
     justify-content: center;
@@ -216,28 +253,34 @@ button:hover {
     flex-direction: column;
     margin-bottom: 20px;
 }
-.testimonials{
+
+.testimonials {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-.test h2{
+
+.test h2 {
     font-size: 60px;
     color: var(--yellow-color);
 }
-.testimonials1, .testimonials2, .testimonials3{
+
+.testimonials1,
+.testimonials2,
+.testimonials3 {
     width: 25%;
 }
 
 /* Yellow Shadow BOX */
-.OuterBox{
+.OuterBox {
     padding-top: 10;
     height: 400px;
     background-color: black;
     font-size: 30px;
     text-align: center;
 }
-.boxContent{
+
+.boxContent {
     padding-top: 90px;
     margin-top: 59px;
     background-color: black;
