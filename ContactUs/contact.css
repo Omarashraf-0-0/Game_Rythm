@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Saira Condensed", sans-serif;
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+h1 {
+    color: var(--yellow-color);
+}
+
+:root {
+    --yellow-color: #fdff00;
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
+
+/* Navigation */
+/* The begin of the Navbar --------------------------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12%;
+    background-color: black;
+    height: 100px;
+}
+
+.pagelogo {
+    width: 100px;
+    height: 100px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: auto
+}
+
+.nav a {
+    color: rgba(255, 255, 255, 0.73);
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 20px;
+    font-size: large;
+    font-weight: bold;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    background-color: #ffee10;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.9s;
+}
+
+.nav a:hover:after {
+    width: 100%;
+}
+
+.nav a:hover {
+    color: #ffee10;
+}
+
+/* The end of the Navbar--------------------------------- */
+/* End of Navigation */
+
+/* Begin of the Contact page the body _______________ */
+.contact{
+    background-color: var(--black-color);
+    height: 40vh;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+/* End of the Contact page the body _______________ */
+/* Begin of the form elements  */
+
+.Name{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    margin-left: 60px;
+}
+.firstname label, .lastname label , .email label, .message label, .subject label{
+    color: rgba(255, 255, 255, 0.73);
+    font-size: 25px;
+    font-weight: bold;
+}
+.firstname input , .lastname input{
+    width: 550px;
+    height: 18px;
+    padding: 10px;
+    border: var(--yellow-color) 2px solid;
+    margin-top: 8px;
+}
+.email , .subject , .message{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.email input , .subject input , .message textarea{ 
+    width: 1345px;
+    height: 18px;
+    padding: 10px;
+    border: var(--yellow-color) 2px solid;
+    margin-top: 8px;
+}
+.message textarea{
+    width: 1345px;
+    height: 200px;
+    padding: 10px;
+    border: var(--yellow-color) 2px solid;
+    margin-top: 8px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
