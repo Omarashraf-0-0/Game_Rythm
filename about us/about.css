@@ -153,36 +153,70 @@ header{
     transition: 0.5s;
 }
 .cardText h1{
-    margin: 0;
+    margin-bottom:20px;
     letter-spacing: 3px;
+}
+.cardText{
+    width: 100%;            
 }
 .cardText p{
     letter-spacing: 1px;
     font-size: 15px;
-    margin-top: 8px;
+    margin-top: 30px;
 }
-.cardText a{
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    border: 1px solid #fff;
+ul {
+    margin: 0;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  ul li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  ul li a {
+    position: relative; 
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #333;
     border-radius: 50%;
-    margin: 0 5px;
-    text-decoration: none;
-}
-.cardText a i{
-    color: #fff;
-    padding-left: 8px;
-    padding-top: 8px;
-}
-.cardText a:hover{
-    background-color: var(--yellow-color);
-    border-color: #000000;
-    transition: 1s; 
-}
-.cardText a:hover i{
-    color: #000000;
-}
+    font-size: 25px;
+    color: #666;
+    transition: .5s;
+  }
+  
+  ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ffee10;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  
+  ul li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
+  }
+  
+  ul li a:hover {
+    color: #ffee10;
+    box-shadow: 0 0 5px #ffee10;
+    text-shadow: 0 0 5px #ffee10;
+  }
 
 /* End of About Us Card */
 
@@ -222,7 +256,6 @@ header{
     content: ' ';
     position: absolute;
     height: 100%;
-
 }
 .serviceLeftTop h1{
     font-size: 50px;
@@ -257,5 +290,7 @@ header{
     display: block;
     cursor: pointer;
 }
+
+
 
 /* End of Service */
