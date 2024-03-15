@@ -6,7 +6,8 @@
     font-family: "Saira Condensed", sans-serif;
     color: white
 }
-body{
+
+body {
     background-color: var(--black-color);
 }
 
@@ -22,7 +23,7 @@ h1 {
 
 /* Navigation */
 /* The begin of the Navbar --------------------------------------*/
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,26 +31,30 @@ header{
     background-color: black;
     height: 100px;
 }
-.pagelogo{
+
+.pagelogo {
     width: 100px;
     height: 100px;
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
-    width:auto
+    width: auto
 }
-.nav a{
+
+.nav a {
     color: rgba(255, 255, 255, 0.73);
     text-decoration: none;
     position: relative;
     letter-spacing: 0.5px;
-    padding: 0 20px;   
+    padding: 0 20px;
     font-size: large;
-    font-weight: bold; 
+    font-weight: bold;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
-.nav a::after{
+
+.nav a::after {
     content: '';
     position: absolute;
     background-color: #ffee10;
@@ -59,17 +64,20 @@ header{
     bottom: -10px;
     transition: 0.9s;
 }
-.nav a:hover:after{
+
+.nav a:hover:after {
     width: 100%;
 }
-.nav a:hover{
+
+.nav a:hover {
     color: #ffee10;
 }
+
 /* The end of the Navbar--------------------------------- */
 
 /* About Us Card */
 
-.outerCard{
+.outerCard {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,18 +85,22 @@ header{
     height: 100%;
     flex-direction: column;
 }
-.cardTeam{
+
+.cardTeam {
     margin: 50px;
     text-align: center;
 }
-.cardTeam p{
+
+.cardTeam p {
     color: white;
     font-size: 30px;
 }
-.cardTeam h1{
+
+.cardTeam h1 {
     font-size: 50px;
 }
-.card{
+
+.card {
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -98,7 +110,8 @@ header{
     border-radius: 10px;
     background-color: #161616;
 }
-.innerCard{
+
+.innerCard {
     width: 300px;
     height: 300px;
     padding: 24px;
@@ -109,20 +122,24 @@ header{
     box-shadow: 0 5px 5px var(--yellow-color);
     border-radius: 10px;
 }
-.innerCard:hover{
+
+.innerCard:hover {
     transform: translateY(15px);
 }
-.innerCard:hover:before{
+
+.innerCard:hover:before {
     opacity: 1;
 }
-.innerCard:hover .cardText{
+
+.innerCard:hover .cardText {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(-10px);
 }
-.innerCard:before{
+
+.innerCard:before {
     content: '';
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     display: block;
     width: 100%;
@@ -133,18 +150,20 @@ header{
     opacity: 0;
     border-radius: 10px;
 }
-.innerCard img{
+
+.innerCard img {
     /* width: 300px;
     height: 300px; */
     width: 100%;
     height: 100%;
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     object-fit: cover;
     border-radius: 10px;
 }
-.innerCard .cardText{
+
+.innerCard .cardText {
     position: relative;
     z-index: 3;
     color: #fff;
@@ -152,35 +171,42 @@ header{
     transform: translateY(60px);
     transition: 0.5s;
 }
-.cardText h1{
-    margin-bottom:20px;
+
+.cardText h1 {
+    margin-bottom: 0px;
     letter-spacing: 3px;
 }
-.cardText{
-    width: 100%;            
+
+.cardText {
+    width: 100%;
 }
-.cardText p{
+
+.cardText p {
     letter-spacing: 1px;
     font-size: 15px;
-    margin-top: 30px;
+    /* margin-bottom: 50px; */
+    padding-bottom: 70px;
 }
+
 ul {
     margin: 0;
-    height: 100px;
-    width: 100px;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 300px;
     display: flex;
     position: absolute;
     /* top: 50%; */
-    left: 50%;
+    left: 47%;
     transform: translate(-50%, -50%);
-  }
-  
-  ul li {
+}
+
+ul li {
     list-style: none;
     margin: 0 10px;
-  }
-  ul li a {
-    position: relative; 
+}
+
+ul li a {
+    position: relative;
     display: block;
     width: 50px;
     height: 50px;
@@ -191,9 +217,9 @@ ul {
     font-size: 25px;
     color: #666;
     transition: .5s;
-  }
-  
-  ul li a::before {
+}
+
+ul li a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -205,72 +231,82 @@ ul {
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
-  }
-  
-  ul li a:hover::before {
+}
+
+ul li a:hover::before {
     transform: scale(1.1);
     box-shadow: 0 0 15px #ffee10;
-  }
-  
-  ul li a:hover {
+}
+
+ul li a:hover {
     color: #ffee10;
     box-shadow: 0 0 5px #ffee10;
     text-shadow: 0 0 5px #ffee10;
-  }
+}
 
 /* End of About Us Card */
 
 
 /* Our Services */
-.service{
+.service {
     margin-top: 100px;
     height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 50px;
 }
-.serviceLeft{
-    display:flex;
+
+.serviceLeft {
+    display: flex;
     flex-direction: column;
     height: 100%;
 }
-.serviceLeftBot{
+
+.serviceLeftBot {
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    
+
 }
-.serviceRight img{
+
+.serviceRight img {
     object-fit: cover;
     width: 100%;
     height: 600px;
 }
-.serviceLeftBot1 i{
-    display: block;
+
+.serviceLeftBot1 i {
     font-size: 40px;
+    position: relative;
     color: var(--yellow-color);
-    margin-bottom: 30px ;
+    margin-bottom: 60px;
+    display: block;
 }
-.serviceLeftBot i::before{
-    content: ' ';
+
+.serviceLeftBot i::before {
     position: absolute;
     height: 100%;
 }
-.serviceLeftTop h1{
+
+.serviceLeftTop h1 {
     font-size: 50px;
     color: white;
 }
-.serviceLeftTop p{
+
+.serviceLeftTop p {
     color: var(--yellow-color);
 }
-.serviceLeftTop span{
+
+.serviceLeftTop span {
     border-bottom: 3px solid var(--yellow-color);
 }
-.serviceLeftTop h1{
+
+.serviceLeftTop h1 {
     position: relative;
 }
-.serviceLeftTop h1::after{
+
+.serviceLeftTop h1::after {
     content: '';
     position: absolute;
     background-color: #ffee10;
@@ -280,15 +316,20 @@ ul {
     bottom: -3px;
     transition: 1.5s;
 }
-.serviceLeftTop h1:hover:after, .serviceLeftTop h1:hover{
+
+.serviceLeftTop h1:hover:after,
+.serviceLeftTop h1:hover {
     width: 100%;
     display: block;
     cursor: pointer;
 }
-.serviceLeftBot i:hover{
+
+.serviceLeftBot i:hover {
     font-size: 50px;
     display: block;
     cursor: pointer;
+    text-shadow: 0 0 5px var(--yellow-color);
+    transition: 0.3s;
 }
 
 
