@@ -346,3 +346,53 @@ button:hover {
     margin-top: 20px;
     
 }
+
+/* footer */
+.Footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 250px; */
+    margin-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 30px;
+}
+.leftFooter p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.Footer h2{
+    color: #fdff00;
+}
+.leftFooter h2{
+    margin-bottom: 10px;
+}
+.Footer h2{
+    margin-top: 20px;
+}
+.Footer hr{
+    color: #fdff00;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.Footericons ul li{
+    display: inline-block; 
+}
+.Footericons ul li a{
+    display: block; 
+    padding: 10px 18px; /* adjust padding as needed */ 
+    text-decoration: none; 
+}
+.Footericons ul li a:hover{
+    font-size: 23px;
+}
+.Footericons{
+    align-items: center;
+}
+.Footer a{
+    text-decoration: none;
+}
+.Footer a:hover{
+    font-size: 20px;
+}
