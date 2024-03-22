@@ -86,7 +86,9 @@ header {
 }
 /* End of the Contact page the body _______________ */
 /* Begin of the form elements  */
-
+body{
+    background-image: url("/assets/background.jpg");
+}
 .Name{
     
     display: flex;
