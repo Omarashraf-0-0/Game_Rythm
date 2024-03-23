@@ -365,6 +365,14 @@ button:hover {
     .rankedGames2{
         display: none;
     }
+    .main{
+        height: 30vh;
+        margin-bottom: 70px;
+    }
+    .home{
+        height: 60vh;
+        margin-bottom: 350px;
+    }
 }
 @media (min-width: 768px) and (max-width: 989px){
     .rankedGames {
@@ -375,6 +383,14 @@ button:hover {
     .rankedGames2{
         display: none;
     }
+    .main{
+        height: 30vh;
+        margin-bottom: 70px;
+    }
+    .home{
+        height: 60vh;
+        margin-bottom: 180px;
+    }
 }
 @media (max-width: 767px){
     .rankedGames {
@@ -384,5 +400,19 @@ button:hover {
     }
     .rankedGames2{
         display: none;
+    }
+    .main{
+        height: 20vh;
+        margin-bottom: 80px;
+    }
+    .home{
+        height: 40vh;
+        margin-bottom: 180px;
+    }
+    .test{
+        margin-bottom: 250px;
+    }
+    .nav_div a{
+        font-size: 10px;
     }
 }
