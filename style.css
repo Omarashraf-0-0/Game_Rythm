@@ -321,17 +321,19 @@ button:hover {
 }
 .Footericons ul li{
     display: inline-block; 
+    margin-right: 20px;
 }
-.Footericons ul li a{
+/* .Footericons ul li i{
     display: block; 
-    padding: 10px 18px; /* adjust padding as needed */ 
+    padding: 10px 18px;
     text-decoration: none; 
-}
-.Footericons ul li a:hover{
-    font-size: 23px;
-}
-.Footericons{
-    align-items: center;
+} */
+.Footericons i:hover{
+    display: inline-block;
+    font-size: 20px;
+    color: #ffee10;
+    /* box-shadow: 0 0 5px #ffee10; */
+    text-shadow: 0 0 5px #ffee10;
 }
 .Footer a{
     text-decoration: none;
