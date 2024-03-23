@@ -82,7 +82,6 @@ header {
     align-items: center;
     align-content: center;
     flex-direction: column;
-    padding-left: 100px;
     text-shadow: black 0px 0px 10px;
 }
 /* End of the Contact page the body _______________ */
@@ -92,7 +91,11 @@ body{
     /* width: 1200px; */
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
+}
+form{
+    margin-left: -50px;
+    margin-right: 10px;
 }
 .Name{
     
@@ -109,11 +112,14 @@ body{
 
 }
 .firstname input , .lastname input{
-    width: 550px;
+    width: 545px;
     height: 18px;
     padding: 10px;
     border: var(--yellow-color) 2px solid;
+    box-shadow: black 100px 100px 100px;
     margin-top: 8px;
+    font-size: larger;
+    /* background-color: black; */
 }
 .email , .subject , .message{
     margin-left: 60px;
@@ -125,6 +131,10 @@ body{
     padding: 10px;
     border: var(--yellow-color) 2px solid;
     margin-top: 8px;
+    box-shadow: black 90px 90px 90px;
+    font-size: larger;
+    /* background-color: black; */
+
 }
 .message textarea{
     width: 1315px;
