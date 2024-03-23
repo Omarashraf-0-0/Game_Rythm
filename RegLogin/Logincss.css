@@ -2,9 +2,14 @@
 *{
     font-family: "Saira Condensed", sans-serif;
 }
+
+:root {
+    --yellow-color: #fdff00;
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
 /* background image  */
-html{
-    background-image: url(imgs/background.jpg);
+body{
     height: 100%; 
     width: 100%;
     background-position: center;
@@ -15,7 +20,19 @@ html{
     position: absolute;
     background-attachment: fixed; /*to make sure the background is fixed when user scrolls */
     /* filter: blur(100px); */
-    transition-duration:0.7s;
+    transition-duration:1s;
+    background-color: black;
+}
+body::before {
+    content: "";
+    background-image: url(imgs/background2.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4; /* adjust as needed */
+    z-index: -1;
 }
 /* End of background image  */
 
@@ -41,12 +58,12 @@ html{
     margin-top: 40%;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px 40px;
-    box-shadow: 0 0 5px 5px #ff4800;
+    box-shadow: 0 0 5px 5px #7e7e00;
     backdrop-filter: blur(15px);
 }
 #form:hover{
-    box-shadow: 0 0 20px 12px #ff4800;
-    transition-duration: 0.25s;
+    box-shadow: 0 0 10px 6px #b6b600;
+    transition-duration: 0.5s;
 }
 
 #form h1{
@@ -67,7 +84,7 @@ html{
     color: aliceblue;
 }
 #form div input:hover,button:hover{
-    box-shadow: 0 0 20px 10px #fdff00;
+    box-shadow: 0 0 20px 10px var(--yellow-color);
     transition-duration: 0.12s;
     cursor: pointer;
 }
@@ -100,4 +117,10 @@ html{
     display: flex;
     margin-left: 50px;
     text-decoration: none;
+}
+#account{
+    display:block;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+    /* text-align: center; */
 }
