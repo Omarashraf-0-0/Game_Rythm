@@ -335,3 +335,36 @@ ul li a:hover {
 
 
 /* End of Service */
+
+/* responsive */
+
+
+@media (min-width: 1200px){
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+    }
+    .card:nth-last-child(){
+        grid-column: span2;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px){
+    .card{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}

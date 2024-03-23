@@ -240,7 +240,9 @@ button:hover {
 
 .testPic {
     width: 120px;
-    border-radius: 100%;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .testHeader {
@@ -340,4 +342,46 @@ button:hover {
 }
 .Footer a:hover{
     font-size: 20px;
+}
+.Footer p{
+    grid-column: span 2;
+    margin-top: 10px;
+}
+
+/* end of footer */
+
+/* Responsive */
+
+@media (min-width: 1200px){
+    
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .rankedGames {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    .rankedGames2{
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 989px){
+    .rankedGames {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    .rankedGames2{
+        display: none;
+    }
+}
+@media (max-width: 767px){
+    .rankedGames {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .rankedGames2{
+        display: none;
+    }
 }
