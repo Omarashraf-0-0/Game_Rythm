@@ -94,8 +94,8 @@ body{
     background-attachment: scroll;
 }
 form{
-    margin-left: -50px;
-    margin-right: 10px;
+    margin-left: 50px;
+    margin-right: 150px;
 }
 .Name{
     
@@ -112,11 +112,11 @@ form{
 
 }
 .firstname input , .lastname input{
-    width: 545px;
+    width: 552px;
     height: 18px;
     padding: 10px;
     border: var(--yellow-color) 2px solid;
-    box-shadow: black 100px 100px 100px;
+    box-shadow: black 200px 200px 200px;
     margin-top: 8px;
     font-size: larger;
     /* background-color: black; */
@@ -131,7 +131,7 @@ form{
     padding: 10px;
     border: var(--yellow-color) 2px solid;
     margin-top: 8px;
-    box-shadow: black 90px 90px 90px;
+    box-shadow: black 200px 200px 200px;
     font-size: larger;
     /* background-color: black; */
 
@@ -147,7 +147,7 @@ form{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    
+    margin-left: 100px;
 }
 button {
     color: black;
