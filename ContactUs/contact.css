@@ -14,9 +14,10 @@ h1 {
 
 :root {
     --yellow-color: #fdff00;
-    --black-color: #000000;
+    /* --black-color: #000000; */
     --white-color: #ffffff;
 }
+
 
 /* Navigation */
 /* The begin of the Navbar --------------------------------------*/
@@ -71,8 +72,6 @@ header {
 }
 
 /* The end of the Navbar--------------------------------- */
-/* End of Navigation */
-
 /* Begin of the Contact page the body _______________ */
 .contact{
     background-color: var(--black-color);
@@ -83,11 +82,17 @@ header {
     align-items: center;
     align-content: center;
     flex-direction: column;
+    padding-left: 100px;
+    text-shadow: black 0px 0px 10px;
 }
 /* End of the Contact page the body _______________ */
 /* Begin of the form elements  */
 body{
-    background-image: url("/assets/background.jpg");
+    background: url("/assets/Contact\ background.jpg");
+    /* width: 1200px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .Name{
     
@@ -100,6 +105,8 @@ body{
     color: rgba(255, 255, 255, 0.73);
     font-size: 25px;
     font-weight: bold;
+    text-shadow: black 0px 0px 10px;
+
 }
 .firstname input , .lastname input{
     width: 550px;
@@ -113,14 +120,14 @@ body{
     margin-top: 20px;
 }
 .email input , .subject input , .message textarea{ 
-    width: 1345px;
+    width: 1315px;
     height: 18px;
     padding: 10px;
     border: var(--yellow-color) 2px solid;
     margin-top: 8px;
 }
 .message textarea{
-    width: 1345px;
+    width: 1315px;
     height: 200px;
     padding: 10px;
     border: var(--yellow-color) 2px solid;
@@ -131,4 +138,27 @@ body{
     justify-content: center;
     margin-top: 20px;
     
+}
+button {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: var(--yellow-color);
+    height: 35px;
+    width: 80px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #dede00;
+    box-shadow: rgba(229, 255, 0, 0.388) 0 3px 9px 0;
+    transform: translate(-2px);
 }

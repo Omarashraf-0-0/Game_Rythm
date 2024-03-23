@@ -176,6 +176,7 @@ button:hover {
 }
 
 .rankedHeader {
+    margin-top: 40px;
     height: 20vh;
     text-align: center;
     display: flex;
