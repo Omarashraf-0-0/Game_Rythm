@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Game.css">
+    <style>body::before{
+        content: "";
+        background: url("../assets/back.jpg") no-repeat center center fixed;
+        position: absolute;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1450px;
+        opacity: 0.3;
+        z-index: -1;
+    }</style>
 </head>
 
 <body>
@@ -14,10 +26,10 @@
     <!-- Nav Bar -->
     <header class="header">
         <div class="img_div">
-<a href="/index.html">
-            <img src="/assets/Logo.jpeg" alt="Cant Open" class="pagelogo" usemap="LOGO">
+<a href="../index.php">
+            <img src="../assets/Logo.jpeg" alt="Cant Open" class="pagelogo" usemap="LOGO">
             <map name="LOGO">
-                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="/index.html">
+                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="../index.php">
              </map>      
  </a>
 
@@ -25,12 +37,12 @@
         </div>
         <nav class="nav">
             <div class="nav_div">
-                <a href="/index.html" class="navHome">Home</a>
-                <a href="/Games/Game.html" class="navGames">Games</a>
-                <a href="/Contactus/Contact.html" class="navContact">Contact</a>
-                <a href="/about us/about.html" class="navAbout_us">About us</a>
+                <a href="../index.php" class="navHome">Home</a>
+                <a href="../Games/Game.php" class="navGames">Games</a>
+                <a href="../Contactus/Contact.php" class="navContact">Contact</a>
+                <a href="../about us/about.php" class="navAbout_us">About us</a>
                 <span class="signup">
-                    <a href="/RegLogin/RegisterPage.html" class="Sign_up"> Sign up</a>
+                    <a href="../RegLogin/registerPage.php" class="Sign_up"> Sign up</a>
                 </span>
             </div>
         </nav>
@@ -75,7 +87,7 @@
             <h2>Take a Look</h2>
             <hr>
             <p><span style="color: #fdff00;">Visit our Office</span></p>
-            <p><a href="about us/about.html">Meet the team</a></p>
+            <p><a href="../about us/about.php">Meet the team</a></p>
             <hr>
             <p><span style="color: #fdff00;">Visit our Feed</span></p>
             <p>Explore our latest News</p>

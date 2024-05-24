@@ -5,23 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="contact.css">
+    <style>
+        body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/Contact\ background.jpg");
+    width: 1200px; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;    z-index: -1;
+    opacity:0.6;
+}
+    </style>
 </head>
 <body>
      <!-- Nav Bar -->
      <header class="header">
         <div class="img_div">
-            <a href="/index.html">
-                <img src="/assets/Logo.jpeg" alt="Cant Open" class="pagelogo">
+            <a href="../index.php">
+                <img src="../assets/Logo.jpeg" alt="Cant Open" class="pagelogo">
             </a>
                 </div>
         <nav class="nav">
             <div class="nav_div">
-                <a href="/index.html" class="navHome">Home</a>
-                <a href="/Games/Game.html" class="navGames">Games</a>
-                <a href="/ContactUs/Contact.html" class="navContact">Contact</a>
-                <a href="/about us/about.html" class="navAbout_us">About us</a>
+                <a href="../index.php" class="navHome">Home</a>
+                <a href="../Games/Game.php" class="navGames">Games</a>
+                <a href="../ContactUs/Contact.php" class="navContact">Contact</a>
+                <a href="../about us/about.php" class="navAbout_us">About us</a>
                 <span class="signup">
-                    <a href="/RegLogin/RegisterPage.html" class="Sign_up"> Sign up</a> 
+                    <a href="../RegLogin/RegisterPage.php" class="Sign_up"> Sign up</a> 
                 </span>
             </div>
         </nav>

@@ -77,7 +77,7 @@ header {
 .main {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-image: url("/assets/GameProject pic 15.png");
+    background-image: url("assets/GameProject\ pic\ 15.png");
     background-position: right;
     height: 60vh;
 }

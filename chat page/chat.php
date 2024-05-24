@@ -21,8 +21,8 @@
             <div class="nav_div">
                 <a href="" class="navHome">Home</a>
                 <a href="" class="navGames">Games</a>
-                <a href="/Contactus/Contact.html" class="navContact">Contact</a>
-                <a href="/about us/about.html" class="navAbout_us">About us</a>
+                <a href="/Contactus/Contact.php" class="navContact">Contact</a>
+                <a href="/about us/about.php" class="navAbout_us">About us</a>
                 <span class="signup">
                     <a href="" class="Sign_up"> Sign_up</a>
                 </span>

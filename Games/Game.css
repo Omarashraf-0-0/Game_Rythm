@@ -86,7 +86,7 @@ body{
 
 body::before{
     content: "";
-    background: url("/assets/back.jpg");
+    background: url("/assets/back.jpg") no-repeat center center fixed;
     position: absolute;
     background-size: cover;
     top: 0;

@@ -5,7 +5,7 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/about us/about.css" rel="stylesheet">
+    <link href="about.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,19 +13,19 @@
     <!-- Nav Bar -->
     <header class="header">
         <div class="img_div">
-            <a href="/index.html">
-                <img src="/assets/Logo.jpeg" alt="Cant Open" class="pagelogo">
+            <a href="../index.php">
+                <img src="../assets/Logo.jpeg" alt="Cant Open" class="pagelogo">
             </a>
            
         </div>
         <nav class="nav">
             <div class="nav_div">
-                <a href="/index.html" class="navHome">Home</a>
-                <a href="/Games/Game.html" class="navGames">Games</a>
-                <a href="/ContactUs/Contact.html" class="navContact">Contact</a>
-                <a href="/about us/about.html" class="navAbout_us">About us</a>
+                <a href="../index.php" class="navHome">Home</a>
+                <a href="../Games/Game.php" class="navGames">Games</a>
+                <a href="../ContactUs/Contact.php" class="navContact">Contact</a>
+                <a href="../about us/about.php" class="navAbout_us">About us</a>
                 <span class="signup">
-                    <a href="/RegLogin/RegisterPage.html" class="Sign_up"> Sign up</a>
+                    <a href="../RegLogin/RegisterPage.php" class="Sign_up"> Sign up</a>
                 </span>
             </div>
         </nav>
@@ -42,7 +42,7 @@
         <div class="card">
 
             <div class="innerCard">
-                <img src="/assets/My Pic2.jpg" alt="">
+                <img src="../assets/My Pic2.jpg" alt="">
                 <div class="cardText">
                     <h1>Omar Shawky</h1>
                     <p>Developer</p>
@@ -73,7 +73,7 @@
             </div>
 
             <div class="innerCard">
-                <img src="/assets/Salah.jpg" alt="">
+                <img src="../assets/Salah.jpg" alt="">
                 <div class="cardText">
                     <h1>Salah Gamal</h1>
                     <p>Developer</p>
@@ -104,7 +104,7 @@
             </div>
 
             <div class="innerCard">
-                <img src="/assets/Ashraf.jpg" alt="">
+                <img src="../assets/Ashraf.jpg" alt="">
                 <div class="cardText">
                     <h1>Omar Ashraf</h1>
                     <p>Developer</p>
@@ -171,7 +171,7 @@
 
         </div>
         <div class="serviceRight">
-            <img src="/assets/GameProject pic 9.png" alt="">
+            <img src="../assets/GameProject pic 9.png" alt="">
         </div>
     </div>
     <!-- End of Our Services -->

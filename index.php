@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -16,17 +17,17 @@
     <header class="header">
         <div class="img_div">
             
-            <img src="./assets/Logo.jpeg" alt="Cant Open" class="pagelogo">
+            <img src="assets/Logo.jpeg" alt="Cant Open" class="pagelogo">
 
         </div>
         <nav class="nav">
             <div class="nav_div">
-                <a href="/index.html" class="navHome">Home</a>
-                <a href="/Games/Game.html" class="navGames">Games</a>
-                <a href="/Contactus/Contact.html" class="navContact">Contact</a>
-                <a href="/about us/about.html" class="navAbout_us">About us</a>
+                <a href="index.php" class="navHome">Home</a>
+                <a href="Games/Game.php" class="navGames">Games</a>
+                <a href="Contactus/Contact.php" class="navContact">Contact</a>
+                <a href="about us/about.php" class="navAbout_us">About us</a>
                 <span class="signup">
-                    <a href="/RegLogin/RegisterPage.html" class="Sign_up"> Sign up</a>
+                    <a href="RegLogin/RegisterPage.php" class="Sign_up"> Sign up</a>
                 </span>
             </div>
         </nav>
@@ -36,7 +37,10 @@
     <!-- END of Navigation -->
 
     <!-- Main -->
-    <div class="main">
+    <div class="main" style="background: url('assets/GameProject\ pic\ 15.png'); display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-position: right;
+    height: 60vh;">
         <div class="mainLeft">
             <h1>Game Rythm</h1>
         </div>
@@ -49,10 +53,10 @@
             <h1>Join Rooms</h1>
             <p>Choose your perfect match-up and meet up with your new friends</p>
 
-            <a href="/Games/Game.html"><button>Join Now!</button></a>
+            <a href="Games/Game.php"><button>Join Now!</button></a>
         </div>
         <div class="homeTopRight">
-            <img src="/assets/GameProject pic 16.png" alt="">
+            <img src="assets/GameProject pic 16.png" alt="">
         </div>
 
         <div class="homeBotLeft">
@@ -61,7 +65,7 @@
         <div class="homeBotRight">
             <h1>Shop Your Favorite Game</h1>
             <p>With wide range of games, Pick your prefered one and play</p>
-            <a href="/Games/Game.html"><button>Buy Now!</button></a>
+            <a href="Games/Game.php"><button>Buy Now!</button></a>
         </div>
     </div>
     <!-- END of Main Continue -->
@@ -80,7 +84,7 @@
                 <div class="rankedText">
                     <h1>Call of Duty</h1>
                     <p>Multiplayer First person view Shooting game.</p>
-                    <a href="/Games/Game.html"><button>Play Now!</button></a>
+                    <a href="Games/Game.php"><button>Play Now!</button></a>
                 </div>
             </div>
             <div class="rankedGames2">
@@ -89,7 +93,7 @@
                 <div class="rankedText">
                     <h1>Fortnite</h1>
                     <p>Unique shooting games with different match-ups</p>
-                    <a href="/Games/Game.html"><button>Play Now!</button></a>
+                    <a href="Games/Game.php"><button>Play Now!</button></a>
                 </div>
             </div>
             <div class="rankedGames3">
@@ -98,7 +102,7 @@
                 <div class="rankedText">
                     <h1>MineCraft</h1>
                     <p>Explore the open world and build and survive with your friends</p>
-                    <a href="/Games/Game.html"><button>Play Now!</button></a>
+                    <a href="Games/Game.php"><button>Play Now!</button></a>
                 </div>
             </div>
         </div>
@@ -114,21 +118,21 @@
         </div>
         <div class="testimonials">
             <div class="testimonials1">
-                <img src="/assets/ancelottijpg.jpg" class="testPic" alt="">
+                <img src="assets/ancelottijpg.jpg" class="testPic" alt="">
                 <p>Initially, I joined Game Rythm out of curiosity, but it quickly became my favorite gaming hub. The
                     community is welcoming, and finding teammates for co-op sessions is a breeze. It’s the perfect blend
                     of social networking and gaming.</p>
                 <h1>Ancelotti Totti</h1>
             </div>
             <div class="testimonials2">
-                <img src="/assets/Lemby.jpeg" class="testPic" alt="">
+                <img src="assets/Lemby.jpeg" class="testPic" alt="">
                 <p>Game Rythm isn’t just a website; it’s my gaming sanctuary. The chat features are incredibly
                     intuitive, making it easy to coordinate with my team and dominate the leaderboards. It’s more than a
                     platform; it’s where I’ve forged bonds with gamers worldwide.</p>
                 <h1>Mohammed Saad</h1>
             </div>
             <div class="testimonials3">
-                <img src="/assets/tourist.jpeg" class="testPic" alt="">
+                <img src="assets/tourist.jpeg" class="testPic" alt="">
                 <p>For a competitive player like me, Game Rythm is a treasure trove. The low-latency voice chat is
                     perfect for real-time strategy, and the social features add a fun layer to sharing our gaming
                     triumphs. It’s the pulse of my gaming life!</p>
@@ -156,7 +160,7 @@
             <h2>Take a Look</h2>
             <hr>
             <p><span style="color: #fdff00;">Visit our Office</span></p>
-            <p><a href="about us/about.html">Meet the team</a></p>
+            <p><a href="about us/about.php">Meet the team</a></p>
             <hr>
             <p><span style="color: #fdff00;">Visit our Feed</span></p>
             <p>Explore our latest News</p>
