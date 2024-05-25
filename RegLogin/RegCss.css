@@ -6,6 +6,18 @@
 input{
     background-color: red;
 }
+input[type="text"]:focus {
+    background-color: #3CBC8D; /* Set your desired color */
+    color: white; /* Change text color if needed */
+}
+input:-internal-autofill-selected {
+    background-color: red !important; /* Change as needed */
+    color: #fff !important; /* Change as needed */
+}
+input[type=text]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px orange; /* Change as needed */
+}
 :root {
     --yellow-color: #fdff00;
     --black-color: #000000;

@@ -47,7 +47,7 @@ session_start();
                 <?php if (isset($_SESSION['username'])): ?>
                     <span class="user-info">
                         <a href="logout.php" class="logout">Logout</a>
-                        <span>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></span>
+                        <span>Welcome, <?php echo  htmlspecialchars($_SESSION['username']); ?></span>
                     </span>
                 <?php else: ?>
                     <span class="signup">

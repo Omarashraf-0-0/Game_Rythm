@@ -24,6 +24,8 @@ if (isset($_POST['Registerbutton'])) {
         if (mysqli_num_rows($result) > 0) {
             // Username already exists
             echo "<script>alert('Username already exists. Please choose a different one.');</script>";
+            echo "<script>window.location.href = 'registerPage.php';</script>";
+
         } else {
             // Inserting data into database
             $sql = "INSERT INTO users (firstName, lastName, Email, username, Password) VALUES ('$FirstName', '$LastName', '$Email', '$username', '$password')";
@@ -115,36 +117,9 @@ if (isset($_POST['Registerbutton'])) {
             return true;
         }
         
-        document.addEventListener('DOMContentLoaded', (event) => {
-    // Get the modal
-    const popup = document.getElementById('popup');
-
-    // Get the button that opens the modal
-    const btn = document.getElementById('openPopupBtn');
-
-    // Get the <span> element that closes the modal
-    const span = document.getElementById('closePopupBtn');
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-        popup.style.display = 'block';
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        popup.style.display = 'none';
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == popup) {
-            popup.style.display = 'none';
-        }
-    }
-});
-
         document.getElementById('registrationForm').addEventListener('submit', function(event) {
             if (!validateForm(event)) {
+                window.location.href = 'RegisterPage.php';
                 event.preventDefault(); // Prevent form submission if validation fails
             }else{
                 console.log('Form submitted');
