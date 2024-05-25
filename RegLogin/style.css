@@ -1,0 +1,181 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #e3f2fd;
+}
+/* button {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  padding: 14px 22px;
+  border: none;
+  background: black;
+  border-radius: 6px;
+  cursor: pointer;
+} */
+/* button:hover {
+  background-color: yellow;
+} */
+button.Registerbutton,
+.modalBox {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+section.active .Registerbutton {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+}
+section.active .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 24px;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+section.active .modalBox {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.modalBox i {
+  font-size: 70px;
+  color: black;
+}
+.modalBox h2 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: yellow;
+}
+.modalBox h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: yellow ;
+  text-align: center;
+}
+.modalBox .buttons {
+  margin-top: 25px;
+}
+.modalBox button {
+  font-size: 14px;
+  padding: 6px 12px;
+  margin: 0 10px;
+}
+section {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #e3f2fd;
+}
+button {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  /* padding: 14px 22px; */
+  border: none;
+  background: yellow;
+  border-radius: 6px;
+  cursor: pointer; 
+ }
+/* button:hover {
+  background-color: black;
+}/*/
+button.Registerbutton,
+.modalBox {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+} 
+section.active .Registerbutton {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+}
+section.active .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  max-width: 380px;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 24px;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+section.active .modalBox {
+  border : 1px solid yellow;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.modalBox i {
+  font-size: 70px;
+  color: black;
+}
+.modalBox h2 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color:yellow;
+}
+.modalBox h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: yellow;
+  text-align: center;
+}
+.modalBox .buttons {
+  margin-top: 25px;
+}
+.modalBox button {
+  font-size: 14px;
+  padding: 6px 12px;
+  margin: 0 10px;
+}

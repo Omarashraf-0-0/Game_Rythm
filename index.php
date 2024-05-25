@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,19 +9,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
-
 </head>
 
 <body>
-
     <!-- Navigation -->
-
     <!-- Nav Bar -->
     <header class="header">
         <div class="img_div">
-            
             <img src="assets/Logo.jpeg" alt="Cant Open" class="pagelogo">
-
         </div>
         <nav class="nav">
             <div class="nav_div">
@@ -26,18 +24,23 @@
                 <a href="Games/Game.php" class="navGames">Games</a>
                 <a href="Contactus/Contact.php" class="navContact">Contact</a>
                 <a href="about us/about.php" class="navAbout_us">About us</a>
-                <span class="signup">
-                    <a href="RegLogin/RegisterPage.php" class="Sign_up"> Sign up</a>
-                </span>
+                <?php if (isset($_SESSION['username'])): ?>
+                    <span class="user-info">
+                        <a href="logout.php" class="logout">Logout</a>
+                        <span>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></span>
+                    </span>
+                <?php else: ?>
+                    <span class="signup">
+                        <a href="RegLogin/RegisterPage.php" class="Sign_up">Sign up</a>
+                    </span>
+                <?php endif; ?>
             </div>
         </nav>
     </header>
     <!-- End of the nav _----------------------------- -->
 
-    <!-- END of Navigation -->
-
     <!-- Main -->
-    <div class="main" style="background: url('assets/GameProject\ pic\ 15.png'); display: grid;
+    <div class="main" style="background: url('assets/GameProject pic 15.png'); display: grid;
     grid-template-columns: 1fr 2fr;
     background-position: right;
     height: 60vh;">
@@ -52,7 +55,6 @@
         <div class="homeTopLeft">
             <h1>Join Rooms</h1>
             <p>Choose your perfect match-up and meet up with your new friends</p>
-
             <a href="Games/Game.php"><button>Join Now!</button></a>
         </div>
         <div class="homeTopRight">
@@ -64,12 +66,11 @@
         </div>
         <div class="homeBotRight">
             <h1>Shop Your Favorite Game</h1>
-            <p>With wide range of games, Pick your prefered one and play</p>
+            <p>With wide range of games, Pick your preferred one and play</p>
             <a href="Games/Game.php"><button>Buy Now!</button></a>
         </div>
     </div>
     <!-- END of Main Continue -->
-
 
     <!-- Ranked 3 videos -->
     <div class="ranked">
@@ -109,7 +110,6 @@
     </div>
     <!-- End of Ranked 3 videos -->
 
-
     <!-- Testimonials -->
     <div class="test">
         <div class="testHeader">
@@ -139,7 +139,6 @@
                 <h1>Tourist Zakaria</h1>
             </div>
         </div>
-
     </div>
     <!-- End of Testimonials -->
 
@@ -152,7 +151,6 @@
         </div>
     </div>
     <!-- END of Yellow Shadow BOX -->
-
 
     <!-- footer -->
     <div class="Footer">
@@ -183,11 +181,8 @@
                 </ul>
             </div>
         </div>
-        <p style="color: white; text-align: center; ">© GameRythm all rights reserved. MADE with experienced people </p>
+        <p style="color: white; text-align: center;">© GameRythm all rights reserved. MADE with experienced people</p>
     </div>
-
-
-
 </body>
 <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/2a4cee4e4d.js" crossorigin="anonymous"></script>

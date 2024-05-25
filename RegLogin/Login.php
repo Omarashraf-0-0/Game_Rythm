@@ -12,7 +12,7 @@ session_start();
             $_SESSION['username'] = $row['Username'];
             $_SESSION['password'] = $row['Password'];
             echo "<script>alert('Login Successful')</script>";
-            header("Location: ../index.html");
+            header("Location: ../index.php");
             
         }else{
             echo "<script>alert('Login Failed')</script>";
@@ -32,7 +32,7 @@ session_start();
 </head>
 <body>
     <div id="main">
-        <div id="Logoimg"><a href="./index.html">
+        <div id="Logoimg"><a href="../index.php">
             <img src="../assets/Logo.jpeg" alt="Cant Open" class="pagelogo">
         </a></div>
         <div id="form">

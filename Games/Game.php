@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,9 +44,16 @@
                 <a href="../Games/Game.php" class="navGames">Games</a>
                 <a href="../Contactus/Contact.php" class="navContact">Contact</a>
                 <a href="../about us/about.php" class="navAbout_us">About us</a>
-                <span class="signup">
-                    <a href="../RegLogin/registerPage.php" class="Sign_up"> Sign up</a>
-                </span>
+                <?php if (isset($_SESSION['username'])): ?>
+                    <span class="user-info">
+                        <a href="logout.php" class="logout">Logout</a>
+                        <span>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></span>
+                    </span>
+                <?php else: ?>
+                    <span class="signup">
+                        <a href="../RegLogin/RegisterPage.php" class="Sign_up">Sign up</a>
+                    </span>
+                <?php endif; ?>
             </div>
         </nav>
     </header>
