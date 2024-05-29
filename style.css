@@ -23,10 +23,12 @@ h1 {
 header {
     display: flex;
     justify-content: space-between;
+    /* justify-content: space-around; */
     align-items: center;
     padding: 20px 12%;
     background-color: black;
     height: 100px;
+    spacing: 250px;
 }
 
 .pagelogo {
@@ -68,6 +70,14 @@ header {
 
 .nav a:hover {
     color: #ffee10;
+}
+
+.texts{
+    /* padding-left: 100px; */
+    color: #ffee10;
+    cursor: pointer;
+    font-size: large;
+    margin-left: 30px;
 }
 
 /* The end of the Navbar--------------------------------- */

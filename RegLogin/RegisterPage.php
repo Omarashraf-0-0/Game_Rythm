@@ -19,16 +19,15 @@ if (isset($_POST['Registerbutton'])) {
         $password = mysqli_real_escape_string($conn, $password);
 
         // Check if username already exists
-        $check_username_query = "SELECT * FROM users WHERE username='$username'";
+        $check_username_query = "SELECT * FROM user WHERE user_name='$username'";
         $result = mysqli_query($conn, $check_username_query);
         if (mysqli_num_rows($result) > 0) {
             // Username already exists
             echo "<script>alert('Username already exists. Please choose a different one.');</script>";
             echo "<script>window.location.href = 'registerPage.php';</script>";
-
         } else {
             // Inserting data into database
-            $sql = "INSERT INTO users (firstName, lastName, Email, username, Password) VALUES ('$FirstName', '$LastName', '$Email', '$username', '$password')";
+            $sql = "INSERT INTO user (firstName, lastName, Email, user_name, Password) VALUES ('$FirstName', '$LastName', '$Email', '$username', '$password')";
 
             if (mysqli_query($conn, $sql)) {
                 echo "<script>
@@ -50,6 +49,7 @@ if (isset($_POST['Registerbutton'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,15 +57,16 @@ if (isset($_POST['Registerbutton'])) {
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="RegCss.css">
 </head>
+
 <body>
     <div id="main">
         <div id="Logoimg"><a href="../index.php">
-            <img src="../assets/Logo.jpeg" alt="Cant Open" class="pagelogo">
-        </a></div>
+                <img src="../assets/GR (13).png" alt="Cant Open" class="pagelogo">
+            </a></div>
         <div id="Registrationform">
             <form id="registrationForm" action="registerPage.php" method="post">
                 <h1>Registration</h1>
-                
+
                 <div class="FullName">
                     <input type="text" id="FirstName" name="FirstName" placeholder="First name" required>
                     <input type="text" id="LastName" name="LastName" placeholder="Last name" required>
@@ -85,7 +86,7 @@ if (isset($_POST['Registerbutton'])) {
 
                 <div class="FormRegisterbutton">
                     <button type="submit" id="Registerbutton" name="Registerbutton">Register</button>
-                    <a href="/RegLogin/Login.php" id="sign">Already have an account?</a>
+                    <a href="../RegLogin/Login.php" id="sign">Already have an account?</a>
                 </div>
             </form>
         </div>
@@ -109,22 +110,38 @@ if (isset($_POST['Registerbutton'])) {
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
+            // Email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                window.alert('Please enter a valid email.');
+                event.preventDefault(); // Prevent form from submitting
+                return false;
+            }
+
+            // Password validation
+            // const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            // if (!passwordPattern.test(password)) {
+            //     window.alert('Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character.');
+            //     event.preventDefault(); // Prevent form from submitting
+            //     return false;
+            // }
+
             if (!firstName || !lastName || !email || !username || !password) {
                 window.alert('Please fill all the fields.');
-                event.preventDefault();  // Prevent form from submitting
+                event.preventDefault(); // Prevent form from submitting
                 return false;
             }
             return true;
         }
-        
+
         document.getElementById('registrationForm').addEventListener('submit', function(event) {
             if (!validateForm(event)) {
-                window.location.href = 'RegisterPage.php';
                 event.preventDefault(); // Prevent form submission if validation fails
-            }else{
+            } else {
                 console.log('Form submitted');
             }
         });
     </script>
 </body>
+
 </html>

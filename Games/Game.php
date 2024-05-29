@@ -122,6 +122,38 @@ session_start();
         </div>
         <p style="color: white; text-align: center; ">© GameRythm all rights reserved. MADE with experienced people </p>
     </div>
+
+    <!-- footer -->
+    <div class="Footer">
+        <div class="leftFooter">
+            <h2>Take a Look</h2>
+            <hr>
+            <p><span style="color: #fdff00;">Visit our Office</span></p>
+            <p><a href="about us/about.php">Meet the team</a></p>
+            <hr>
+            <p><span style="color: #fdff00;">Visit our Feed</span></p>
+            <p>Explore our latest News</p>
+        </div>
+        <div class="rightFooter">
+            <h2>Check us out</h2>
+            <hr>
+            <p>Have any question?</p>
+            <p>Please don't hesitate to call us <br>at +201557786305</p>
+            <p>Got any suggestions?</p>
+            <p>Contact us at salahgamal20016@gmail.com</p>
+            <h2>Follow us</h2>
+            <hr>
+            <div class="Footericons">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-code"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <p style="color: white; text-align: center;">© GameRythm all rights reserved. MADE with experienced people</p>
+    </div>
 </body>
 
 </html>

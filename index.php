@@ -1,5 +1,6 @@
 <?php
 session_start();
+@include 'config.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,25 +17,30 @@ session_start();
     <!-- Nav Bar -->
     <header class="header">
         <div class="img_div">
-            <img src="assets/Logo.jpeg" alt="Cant Open" class="pagelogo">
+            <!-- <img src="assets/Logo.jpeg" alt="Cant Open" class="pagelogo"> -->
+            <img src="assets/GR (13).png" alt="Cant Open" class="pagelogo">
         </div>
         <nav class="nav">
             <div class="nav_div">
                 <a href="index.php" class="navHome">Home</a>
-                <a href="Games/Game.php" class="navGames">Games</a>
+                <!-- <a href="Games/Game.php" class="navGames">Games</a> -->
+                <a href="Lobby.php" class="navGames">Games</a>
                 <a href="Contactus/Contact.php" class="navContact">Contact</a>
                 <a href="about us/about.php" class="navAbout_us">About us</a>
                 <?php if (isset($_SESSION['username'])): ?>
                     <span class="user-info">
                         <a href="logout.php" class="logout">Logout</a>
-                        <span>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></span>
+                        <span class="texts"><?php echo htmlspecialchars($_SESSION['username']); ?></span>
                     </span>
                 <?php else: ?>
                     <span class="signup">
                         <a href="RegLogin/RegisterPage.php" class="Sign_up">Sign up</a>
+                        <!-- <a href="logout.php" class="logout">Logout</a> -->
+
                     </span>
                 <?php endif; ?>
             </div>
+
         </nav>
     </header>
     <!-- End of the nav _----------------------------- -->
@@ -55,7 +61,7 @@ session_start();
         <div class="homeTopLeft">
             <h1>Join Rooms</h1>
             <p>Choose your perfect match-up and meet up with your new friends</p>
-            <a href="Games/Game.php"><button>Join Now!</button></a>
+            <a href="Lobby.php"><button>Join Now!</button></a>
         </div>
         <div class="homeTopRight">
             <img src="assets/GameProject pic 16.png" alt="">
@@ -67,7 +73,7 @@ session_start();
         <div class="homeBotRight">
             <h1>Shop Your Favorite Game</h1>
             <p>With wide range of games, Pick your preferred one and play</p>
-            <a href="Games/Game.php"><button>Buy Now!</button></a>
+            <a href="Lobby.php"><button>Buy Now!</button></a>
         </div>
     </div>
     <!-- END of Main Continue -->
@@ -85,7 +91,7 @@ session_start();
                 <div class="rankedText">
                     <h1>Call of Duty</h1>
                     <p>Multiplayer First person view Shooting game.</p>
-                    <a href="Games/Game.php"><button>Play Now!</button></a>
+                    <a href="Lobby.php"><button>Play Now!</button></a>
                 </div>
             </div>
             <div class="rankedGames2">
@@ -94,7 +100,7 @@ session_start();
                 <div class="rankedText">
                     <h1>Fortnite</h1>
                     <p>Unique shooting games with different match-ups</p>
-                    <a href="Games/Game.php"><button>Play Now!</button></a>
+                    <a href="Lobby.php"><button>Play Now!</button></a>
                 </div>
             </div>
             <div class="rankedGames3">
@@ -103,7 +109,7 @@ session_start();
                 <div class="rankedText">
                     <h1>MineCraft</h1>
                     <p>Explore the open world and build and survive with your friends</p>
-                    <a href="Games/Game.php"><button>Play Now!</button></a>
+                    <a href="Lobby.php"><button>Play Now!</button></a>
                 </div>
             </div>
         </div>
@@ -125,18 +131,19 @@ session_start();
                 <h1>Ancelotti Totti</h1>
             </div>
             <div class="testimonials2">
-                <img src="assets/Lemby.jpeg" class="testPic" alt="">
+                <img src="assets/Lemby .jpg" class="testPic" alt="">
                 <p>Game Rythm isn’t just a website; it’s my gaming sanctuary. The chat features are incredibly
                     intuitive, making it easy to coordinate with my team and dominate the leaderboards. It’s more than a
                     platform; it’s where I’ve forged bonds with gamers worldwide.</p>
-                <h1>Mohammed Saad</h1>
+                <h1>Mohammad Saad</h1>
             </div>
             <div class="testimonials3">
-                <img src="assets/tourist.jpeg" class="testPic" alt="">
+                <img src="assets/mark .jpg" class="testPic" alt="">
                 <p>For a competitive player like me, Game Rythm is a treasure trove. The low-latency voice chat is
                     perfect for real-time strategy, and the social features add a fun layer to sharing our gaming
                     triumphs. It’s the pulse of my gaming life!</p>
-                <h1>Tourist Zakaria</h1>
+                <h1>Cool Zuckerberg
+                </h1>
             </div>
         </div>
     </div>

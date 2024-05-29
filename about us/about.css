@@ -53,6 +53,13 @@ header {
     font-weight: bold;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
+.texts{
+    /* padding-left: 100px; */
+    color: #ffee10;
+    cursor: pointer;
+    font-size: large;
+    margin-left: 30px;
+}
 
 .nav a::after {
     content: '';
@@ -335,6 +342,73 @@ ul li a:hover {
 
 
 /* End of Service */
+
+
+/* footer */
+.Footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 250px; */
+    margin-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 30px;
+    list-style: initial; /* Or whatever you want it to be */
+    margin: initial;
+}
+.leftFooter p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.Footer h2{
+    color: #fdff00;
+}
+.leftFooter h2{
+    margin-bottom: 10px;
+}
+.Footer h2{
+    margin-top: 20px;
+}
+.Footer hr{
+    color: #fdff00;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.Footericons > ul > li{
+    display: inline-block; 
+    margin-right: 20px;
+    list-style: initial; /* Or whatever you want it to be */
+    margin: initial;
+}
+/* .Footericons ul li i{
+    display: block; 
+    padding: 10px 18px;
+    text-decoration: none; 
+} */
+.Footericons > i:hover{
+    display: inline-block;
+    font-size: 20px;
+    color: #ffee10;
+    /* box-shadow: 0 0 5px #ffee10; */
+    text-shadow: 0 0 5px #ffee10;
+    list-style: initial; /* Or whatever you want it to be */
+    margin: initial;
+}
+.Footer a{
+    text-decoration: none;
+    list-style: initial; /* Or whatever you want it to be */
+    margin: initial;
+}
+.Footer a:hover{
+    font-size: 20px;
+    list-style: initial; /* Or whatever you want it to be */
+    margin: initial;
+}
+.Footer p{
+    grid-column: span 2;
+    margin-top: 10px;
+}
 
 /* responsive */
 

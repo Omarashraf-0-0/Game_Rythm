@@ -17,7 +17,7 @@ session_start();
     width: 100%;
     height: 100%;
     background: url("../assets/Contact\ background.jpg");
-    width: 1200px; 
+    width: 1900px; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;    z-index: -1;
@@ -30,19 +30,19 @@ session_start();
      <header class="header">
         <div class="img_div">
             <a href="../index.php">
-                <img src="../assets/Logo.jpeg" alt="Cant Open" class="pagelogo">
+                <img src="../assets/GR (13).png" alt="Cant Open" class="pagelogo">
             </a>
                 </div>
         <nav class="nav">
             <div class="nav_div">
                 <a href="../index.php" class="navHome">Home</a>
-                <a href="../Games/Game.php" class="navGames">Games</a>
+                <a href="../Lobby.php" class="navGames">Games</a>
                 <a href="../ContactUs/Contact.php" class="navContact">Contact</a>
                 <a href="../about us/about.php" class="navAbout_us">About us</a>
                 <?php if (isset($_SESSION['username'])): ?>
                     <span class="user-info">
                         <a href="logout.php" class="logout">Logout</a>
-                        <span>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></span>
+                        <<span class="texts"><?php echo htmlspecialchars($_SESSION['username']); ?></span>
                     </span>
                 <?php else: ?>
                     <span class="signup">
